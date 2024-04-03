@@ -1,15 +1,15 @@
 @use 'sass:math';
 
 @mixin theme {
-	--color-primary-h: var(--prim-color-primary-h);
-	--color-primary-s: var(--prim-color-primary-s);
-	--color-primary-l: 68%;
+	--color-primary-h: 175;
+	--color-primary-s: 21%;
+	--color-primary-l: 46%;
+	--color-primary: hsl(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l));
 
 	// Primary tokens
 
 	// Primary
 	--color-primary-shade-1: var(--prim-color-primary-shade-100);
-	--color-primary: var(--prim-color-primary);
 	--color-primary-tint-1: var(--prim-color-primary-tint-200);
 	--color-primary-tint-2: var(--prim-color-primary-tint-250);
 	--color-primary-tint-3: var(--prim-color-primary-tint-300);
