@@ -18,13 +18,7 @@
 		<n8n-menu :items="mainMenuItems" :collapsed="isCollapsed" @select="handleSelect">
 			<template #header>
 				<div :class="$style.logo">
-					<img
-						:src="
-							basePath + (isCollapsed ? 'logo-qbem-fundo-branco.png' : 'logo-qbem-fundo-branco.png')
-						"
-						:class="$style.icon"
-						alt="n8n"
-					/>
+					<img :src="logoPath" :class="$style.icon" alt="n8n" />
 				</div>
 			</template>
 
@@ -172,7 +166,7 @@ export default defineComponent({
 			useTemplatesStore,
 		),
 		logoPath(): string {
-			return this.basePath + (this.isCollapsed ? 'static/logo/collapsed.svg' : this.uiStore.logo);
+			return this.basePath + (this.isCollapsed ? 'logo-qbem.png' : this.uiStore.logo);
 		},
 		hasVersionUpdates(): boolean {
 			return this.versionsStore.hasVersionUpdates;

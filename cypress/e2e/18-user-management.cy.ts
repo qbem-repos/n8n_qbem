@@ -132,7 +132,7 @@ describe('User Management', { disableAutoLogin: true }, () => {
 			.logo()
 			.should('have.attr', 'src')
 			.then((src) => {
-				expect(src).to.include('/static/logo/channel/dev-dark.svg');
+				expect(src).to.include('logo-qbem.png');
 			});
 
 		cy.visit(personalSettingsPage.url);
@@ -143,7 +143,7 @@ describe('User Management', { disableAutoLogin: true }, () => {
 			.logo()
 			.should('have.attr', 'src')
 			.then((src) => {
-				expect(src).to.include('/static/logo/channel/dev.svg');
+				expect(src).to.include('logo-qbem-fundo-branco.png');
 			});
 	});
 
